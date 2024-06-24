@@ -12,10 +12,10 @@ import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
 import { infuraProvider } from "wagmi/providers/infura";
 
 const { chains, provider } = configureChains(
-  [chain.polygonMumbai],
+  [chain.polygonMumbai, chain.mainnet],
   [
     infuraProvider({
-      apiKey: "", 
+      apiKey: "INFURA_API", 
       priority: 1,
     }),
   ]

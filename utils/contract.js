@@ -19,7 +19,7 @@ export const tokenContract = async (address) => {
     }
 };
 
-export const Contract = async () => {
+export const contract = async () => {
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const { ethereum } = window;
 
